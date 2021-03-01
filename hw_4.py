@@ -139,3 +139,4 @@ order_1 = MyOrder(['a', 'b', 'c'], 'd')
 order_2 = MyOrder([], 'a')
 print(bool(order_1))
 print(bool(order_2))
+
