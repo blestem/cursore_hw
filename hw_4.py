@@ -14,18 +14,13 @@ class Bus(Vehicle):
 
 
 # 3. Determine which class a given Bus object belongs to (Check type of an object)
-bus = Bus(90, 456893, 13)
-print(type(bus))
-print(isinstance(bus, Bus))
+school_bus = Bus(90, 456893, 13)
+print(type(school_bus))
+print(isinstance(school_bus, Bus))
 print(issubclass(Bus, Vehicle))
 
-
 # 4. Determine if School_bus is also an instance of the Vehicle class
-class School_bus:
-    pass
-
-
-print(issubclass(School_bus, Vehicle))
+print(f'School_bus is an instance of Vehicle class - {isinstance(school_bus, Vehicle)}')
 
 
 # 5. Create a new class School with get_school_id and number_of_students instance attributes
@@ -35,7 +30,7 @@ class School:
         self.number_of_students = number_of_students
 
     def get_school_id(self):
-        return self.get_school_id()
+        return self.get_school_id
 
 
 # 6. Create a new class SchoolBus that will inherit all of the methods from School and Bus and will have its own -
@@ -78,7 +73,7 @@ class City:
         if population > 1500:
             return instance
         else:
-            print('Your city is too small')
+            return 'Your city is too small'
 
     # 9. Override a printable string representation of the City class and return: The population of the city {name}
     # is {population}
@@ -139,4 +134,3 @@ order_1 = MyOrder(['a', 'b', 'c'], 'd')
 order_2 = MyOrder([], 'a')
 print(bool(order_1))
 print(bool(order_2))
-
