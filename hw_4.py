@@ -25,12 +25,13 @@ print(f'School_bus is an instance of Vehicle class - {isinstance(school_bus, Veh
 
 # 5. Create a new class School with get_school_id and number_of_students instance attributes
 class School:
-    def __init__(self, get_school_id, number_of_students):
-        self.get_school_id = get_school_id
+    def __init__(self, school_id, number_of_students):
+        self.school_id = school_id
         self.number_of_students = number_of_students
 
     def get_school_id(self):
-        return self.get_school_id
+        return self.school_id
+
 
 
 # 6. Create a new class SchoolBus that will inherit all of the methods from School and Bus and will have its own -
